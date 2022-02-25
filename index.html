@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Task</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="#">IBM Watson Media</a>
+        </div>
+    </header>
+    <main>
+        <section id="edit-page">
+            <div class="rectangle">
+
+            </div>
+            <div class="form-container">
+
+                <div class="form-header">
+                    <nav class="breadcrumb-container">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Events</a></li>
+                            <li class="breadcrumb-item" aria-current="page">Revenue reporting Q2</li>
+                        </ol>
+                    </nav>
+                    <h2 class="title">Edit event</h2>
+                </div>
+
+                <div id="form">
+                    <form>
+                        <div class="form-group">
+                            <label for="x">Event name</label>
+                            <input type="text" value="Revenue reporting Q2">
+                            <span class="helper-text">Displayed as the channel title while the event page is
+                                open.</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="region">Event time zone</label>
+                            <select name="region" id="region" class="minimal">
+                                <option value="1">Europe/Budapest</option>
+                                <option value="2">Europe/Germany</option>
+                                <option value="2">Europe/Poland</option>
+                                <option value="2">Europe/France</option>
+                            </select>
+                        </div>
+
+                        <div class="event-start">
+                            <div class="event-start-header">
+                                <h3 class="title">Event date</h3>
+                                <p class="event-detail">Start and end date of the event displayed on the event page.
+                                    Sessions between these
+                                    two dates are listed on the event page under the Schedule tab.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="start">Event start</label>
+                                <input type="date" id="start" name="start" value="2021-09-28">
+                            </div>
+                            <div class="form-group">
+                                <label for="end">Event end</label>
+                                <input type="date" id="end" name="end" value="2021-09-28">
+                            </div>
+                        </div>
+
+                        <div class="event-start">
+                            <div class="event-start-header">
+                                <h3 class="title">Event page</h3>
+                                <p class="event-detail">Opening the event page turns your channel page into your event's
+                                    landing page.</p>
+                            </div>
+                            <div class="form-group">
+                                <label for="open">Event page opens</label>
+                                <input type="date" id="open" name="open" value="2021-09-28">
+                            </div>
+                            <div class="form-group">
+                                <label for="close">Event page closes</label>
+                                <input type="date" id="close" name="close" value="2021-09-28">
+                            </div>
+                        </div>
+                        <div class="controllers">
+                            <button class="btn btn-primary">Save</button>
+                            <button class="btn btn-cancel">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
